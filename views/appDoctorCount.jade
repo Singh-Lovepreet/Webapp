@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1= title
+  div
+    table
+      thead
+        tr
+          td(style="border-bottom: 1px solid #000;")
+            b Sl. No
+          each theadItem, i in data.theadData
+            td(style=(i == 0) ?"border-bottom: 1px solid #000;":"text-align: center;border-bottom: 1px solid #000;")
+              b #{theadItem}
+      tbody
+        each docData, j in data.values
+          tr
+            td(style="border-bottom: 1px solid #ccc;") #{(j+1)}
+            each theadItem, k in data.theadData
+              - var pcount = docData[theadItem] || 0;
+              - var baseStyle = pcount == 0 ? "text-align: center;border-bottom: 1px solid #e8554e;color: #e8554e" : "text-align: center;border-bottom: 1px solid #ccc;"
+              td(style=(k == 0) ?"border-bottom: 1px solid #ccc;":baseStyle) #{pcount}

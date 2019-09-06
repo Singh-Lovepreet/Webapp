@@ -1,0 +1,9 @@
+node_modules
+.idea
+local.json
+*.iml
+tmp
+.DS_Store
+public/prescriptions/
+public/strokes/
+newrelic_agent.log

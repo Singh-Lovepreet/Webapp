@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+var debug = require('debug')('annabelle');
+var app = require('../app');
+var config = require('config');
+
+app.set('port', process.env.NODE_PORT || config.annabelle.port || 3000);
+
+var server = app.listen(app.get('port'), function() {
+  debug('Express server listening on port ' + server.address().port);
+  console.logger.debug('Express server listening on port ' + server.address().port);
+});

@@ -1,0 +1,70 @@
+{
+  "annabelle": {
+    "port": "7007"
+  },
+  "esHosts": [
+    "http://10.148.0.3:9200"
+  ],
+  "aryaServerConfig": {
+    "url": "https://arya.io/server"
+  },
+  "mongoConfig": {
+    "hosts": "127.0.0.1:27017",
+    "hasReplicaSet": false,
+    "database": "mdata",
+    "aryaDatabase": "aryadata",
+    "pDatabase": "pdata",
+    "communicationDB": "communication"
+  },
+  "queueRedisConfig": {
+    "host": "127.0.0.1",
+    "port": "6379"
+  },
+  "mainRedisConfig": {
+    "host": "127.0.0.1",
+    "port": "6379"
+  },
+  "serverUrl": "http://localhost:7007",
+  "log4jConfig": {
+    "auditLogAppender": {
+      "category": "audit",
+      "filename": "logs/audit.log",
+      "pattern": "-yyyy-MM-dd",
+      "type": "console"
+    },
+    "cronLogAppender": {
+      "category": "cron",
+      "filename": "logs/nodeCronLogFile.log",
+      "pattern": "-yyyy-MM-dd",
+      "type": "console"
+    },
+    "dbLogAppender": {
+      "category": "database",
+      "filename": "logs/database.log",
+      "pattern": "-yyyy-MM-dd",
+      "type": "console"
+    },
+    "levels": {
+      "app": "DEBUG",
+      "audit": "DEBUG",
+      "cron": "DEBUG",
+      "database": "DEBUG"
+    },
+    "serverLogAppander": {
+      "category": "app",
+      "filename": "logs/nodeServerLogFile",
+      "pattern": "-yyyy-MM-dd-hh",
+      "type": "console"
+    },
+    "webServiceLogAppender": {
+      "category": "webServiceLogAppender",
+      "filename": "logs/webServiceLogFile",
+      "layout": {
+        "type": "basicLayout"
+      },
+      "pattern": "-yyyy-MM-dd-hh",
+      "type": "dateFile"
+    },
+    "appendConsoleLog": true
+  }
+}
