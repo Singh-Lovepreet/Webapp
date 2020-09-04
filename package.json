@@ -21,7 +21,7 @@
     "elasticsearch": "^15.1.1",
     "es6-promisify": "^5.0.0",
     "express": "^4.16.4",
-    "express-fileupload": "^0.1.4",
+    "express-fileupload": "^1.1.10",
     "extend": "^3.0.1",
     "fast-csv": "^2.4.1",
     "firebase-admin": "^5.11.0",
