@@ -51,7 +51,7 @@
     "socket.io-client": "^2.0.4",
     "thrift": "^0.11.0",
     "tor-request": "^1.2.2",
-    "underscore": "^1.8.3",
+    "underscore": "^1.12.1",
     "xml-parser": "^1.2.1"
   },
   "devDependencies": {
