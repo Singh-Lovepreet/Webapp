@@ -31,7 +31,7 @@
     "lodash": "^4.17.11",
     "log4js": "^0.6.24",
     "lynx": "^0.2.0",
-    "moment": "^2.10.2",
+    "moment": "^2.29.2",
     "moment-duration-format": "^2.2.2",
     "moment-range": "^3.0.3",
     "moment-timezone": "^0.5.13",
