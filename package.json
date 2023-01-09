@@ -24,7 +24,7 @@
     "express-fileupload": "^0.1.4",
     "extend": "^3.0.1",
     "fast-csv": "^2.4.1",
-    "firebase-admin": "^5.11.0",
+    "firebase-admin": "^11.4.1",
     "form-data": "^2.3.2",
     "jade": "~1.6.0",
     "levenshtein": "^1.0.5",
